@@ -49,7 +49,7 @@ st.info(f"🎲 Loaded {len(df)} games, {len(mechanic_cols)} mechanics, and {len(
 
 # === User Inputs ===
 use_feature_importance = st.checkbox("Use mechanic feature importance?", value=True)
-designer_weight = st.slider("Designer weight multiplier", 0.0, 0.1, 0.05)
+designer_weight = st.slider("Designer weight multiplier", 0.0, 0.1, 0.01)
 game_names_input = st.text_input("Enter game names (comma-separated)", value="Terraforming Mars")
 
 # === Recommendation Function ===
